@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  max-width: 350px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadButton {
+  background-color: #3498db;
+  color: white;
+  padding: 6px 24px;
+  font-size: 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+
+.uploadButton:hover {
+  background-color: #2980b9;
+}
+
+.uploadButton:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,135 @@
+.modalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 90%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out;
+  width: 500px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modalContent h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modalContent input,
+.modalContent textarea,
+.prioritySelect {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #f9f9f9;
+}
+
+.modalContent textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+.prioritySelect {
+  cursor: pointer;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='18' height='18' fill='%23007bff'><path d='M7 10l5 5 5-5z'></path></svg>")
+    no-repeat right 10px center;
+  background-size: 16px;
+  padding-right: 30px;
+}
+
+.prioritySelect:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttons button[type='submit'] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.buttons button[type='submit']:hover {
+  background-color: #218838;
+}
+
+.buttons button[type='button'] {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.buttons button[type='button']:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 480px) {
+  .modalContent {
+    padding: 15px;
+    width: 200px;
+  }
+
+  .modalContent input,
+  .modalContent textarea,
+  .prioritySelect {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .buttons button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

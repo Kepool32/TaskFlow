@@ -1,0 +1,76 @@
+.filesSection {
+  margin-top: 20px;
+}
+
+.filesContainer {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.fileList {
+  list-style: none;
+  padding: 0;
+}
+
+.fileItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.fileImage {
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.fileVideo {
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+
+.fileDocument,
+.fileOther,
+.fileIcon {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.fileDocument a,
+.fileOther a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.fileDocument a:hover,
+.fileOther a:hover {
+  text-decoration: underline;
+}
+
+.fileIcon img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}

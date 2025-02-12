@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+}
+
+.projectItem {
+  background: linear-gradient(135deg, #5a69ff, #9eaaff);
+  border: 3px solid #3742fa;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  width: 320px;
+  max-width: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 420px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #f4f4f4;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .projectInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+    max-height: calc(100% - 70px);
+    padding-right: 10px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.1);
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: #cce4da;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+
+  .viewTaskWrapper {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    transform: translateY(15px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  &:hover .viewTaskWrapper {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .viewTask,
+  .deleteButton {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
+    text-align: center;
+  }
+
+  .viewTask {
+    background: #617fbf;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #021f4a;
+
+    &:hover {
+      background: #908fed;
+      transform: scale(1.05);
+    }
+  }
+
+  .deleteButton {
+    background: #ff4757;
+    color: #fff;
+    border: 1px solid #e84118;
+
+    &:hover {
+      background: #e84118;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .projectItem {
+    width: 260px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectItem {
+    width: 220px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectItem {
+    width: 180px;
+    height: 300px;
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .viewTask,
+  .deleteButton {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

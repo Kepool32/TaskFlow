@@ -1,0 +1,99 @@
+.subtasksSection {
+  margin-top: 20px;
+  max-width: 400px; /* Set max width for the section */
+  width: 100%; /* Ensure the section fits within the container */
+  margin-left: auto;
+  margin-right: auto; /* Center align the section */
+}
+
+.subtasksContainer {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Border for the container */
+  background-color: inherit; /* Remove background color */
+}
+
+.subtaskList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.subtaskItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 8px;
+  gap: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 100%;
+}
+
+.subtaskText {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtaskStatus {
+  display: flex;
+  align-items: center; /* Align circle and text in a row */
+  margin-bottom: 10px;
+}
+
+.statusCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.statusCompleted {
+  background-color: green;
+}
+
+.statusNotCompleted {
+  background-color: red;
+}
+
+.subtaskActions {
+  display: flex;
+  justify-content: space-between; /* Place buttons on opposite sides */
+  width: 100%;
+}
+
+.subtaskItem button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subtaskItem button:hover {
+  background-color: #2980b9;
+}
+
+.subtaskItem button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.subtaskItem p {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  max-width: 100%; /* Ensure buttons don't exceed container width */
+}

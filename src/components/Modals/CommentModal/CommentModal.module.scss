@@ -1,0 +1,85 @@
+.commentModal {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.textarea {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  color: #333;
+  resize: vertical;
+  min-height: 100px;
+  transition:
+    border 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #ccc;
+  background-color: #fff;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ccc;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.submitButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+.closeButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.closeButton:hover {
+  background-color: #e53935;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .commentModal {
+    padding: 15px;
+  }
+
+  .textarea {
+    min-height: 80px;
+  }
+}
