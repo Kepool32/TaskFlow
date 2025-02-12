@@ -9,8 +9,15 @@
       "@actions/*": ["actions/*"],
       "@reducers/*": ["reducers/*"],
       "@types/*": ["types/*"]
-    }
+    },
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "isolatedModules": true
   },
+  "include": ["src"],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

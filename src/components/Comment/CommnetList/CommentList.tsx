@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './CommentList.module.scss';
-import { Comment } from '@types/commetTypes';
+import { Comment } from "@types/commetTypes";
 
 interface CommentListProps {
   comments: Comment[];
