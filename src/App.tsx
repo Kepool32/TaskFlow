@@ -7,7 +7,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<ProjectsPage />} />
-        <Route path="/project/:projectId" element={<ProjectsPage />} />
         <Route path="/tasks/:projectId" element={<TasksPage />} />
       </Routes>
     </Router>
