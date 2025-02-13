@@ -16,7 +16,7 @@ const rootReducer = combineReducers({
 // Определяем тип RootState
 export type RootState = ReturnType<typeof rootReducer>;
 
-// @ts-ignore
+
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 
 sagaMiddleware.run(rootSaga);
