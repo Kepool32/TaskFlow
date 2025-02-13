@@ -1,6 +1,14 @@
 body {
   margin: 0;
 }
+p{
+  white-space: normal;
+  word-wrap: break-word;
+}
+h3{
+  white-space: normal;
+  word-wrap: break-word;
+}
 
 .projectItem {
   background: linear-gradient(135deg, #5a69ff, #9eaaff);
