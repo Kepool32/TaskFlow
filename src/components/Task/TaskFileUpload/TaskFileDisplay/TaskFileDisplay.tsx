@@ -11,7 +11,7 @@ const TaskFileDisplay: React.FC<TaskFileDisplayProps> = ({
   task,
   handleDeleteFile,
 }) => {
-  const serverUrl = 'http://localhost:5000';
+  const serverUrl = import.meta.env.VITE_API_BASE_URL;
 
   const getFileExtension = (fileName: string) =>
     fileName.split('.').pop()?.toLowerCase();
