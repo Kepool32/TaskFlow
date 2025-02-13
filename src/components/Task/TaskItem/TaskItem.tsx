@@ -88,7 +88,9 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete }) => {
       </div>
 
       <div className={styles.title}>
-        {task.title}
+        <div className={styles.titleGpoup}>
+          <p className={styles.Tasktitle}>{task.title}</p>
+        </div>
         <p className={styles.priority}>Приоритет: {task.priority}</p>
       </div>
       <p className={styles.description}>{task.description}</p>
